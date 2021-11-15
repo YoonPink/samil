@@ -9,3 +9,17 @@ start = time.time()
 
 q=random.choice(w)
 while n <=5:
+    print("--문제", n, "--")
+    print(q)
+    x=input()
+    if q == x:
+        print("성공")
+        n=n+1
+        q=random.choice(w)
+    else:
+        print("그걸 틀리네 ㅋㅋ")
+
+end = time.time()
+et = end - start
+et = format(et, ".2f")
+print("타자 시간: ",et,"초")
