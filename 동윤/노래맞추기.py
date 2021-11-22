@@ -326,6 +326,168 @@ def question20():
     else:
         print("그걸 틀리네 ㅋㅋ")
 
+def question71():
+    print("밤새 니가 내려 나를 적시면 텅 빈 내 방 안이 너로 가득 차 널 잊는다는 게 쉽지 않아서 밤새 니가 내리나봐")
+    answer=str(input())
+    if(answer=="밤새 니가 내려"):
+        print("이걸 맞추네;;")
+    else:
+        print("그걸 틀리네 ㅋㅋ")
+
+def question72():
+    print("어떻게 생각해 어떻게 생각해 넌 어떻게 생각해 어떻게 생각해 넌 난 늘 생각해 난 늘 생각해야 해 이제 그만 지겨워")
+    answer=str(input())
+    if(answer=="어떻게 생각해"):
+        print("이걸 맞추네;;")
+    else:
+        print("그걸 틀리네 ㅋㅋ")
+
+def question73():
+    print("어떨 것 같아 내가 널 좋아하고 싶다고 말하면 좋아해도 된다고 말할 수 있겠어 하늘이 다시 캄캄해질 때까지 함께 있자고")
+    answer=str(input())
+    if(answer=="어떨 것 같아"):
+        print("이걸 맞추네;;")
+    else:
+        print("그걸 틀리네 ㅋㅋ")
+
+def question74():
+    print("내게 상처 주게 허락 할 테니 다시 걸어보게 해줘 사랑에 난 이미 손 쓸 수 없게 돼버렸지만 멋대로 그대를 원하고 있네 내가 선택할 수 있는 게 아냐 난 이미 사랑에 빠져 버렸지만")
+    answer=str(input())
+    if(answer=="달과 6펜스"):
+        print("이걸 맞추네;;")
+    else:
+        print("그걸 틀리네 ㅋㅋ")
+
+def question75():
+    print("사랑한다면 저 별처럼 항상 거기서 빛을 줘요 그대 눈부신 사랑에 두눈 멀어도 돼 하늘에 박힌 저 별처럼 당신의 아픔으로 묶여 움직일 수가 없지만 난 변하지 않을테니")
+    answer=str(input())
+    if(answer=="물고기자리"):
+        print("이걸 맞추네;;")
+    else:
+        print("그걸 틀리네 ㅋㅋ")
+
+def question76():
+    print("잠들 수 없는 밤 또 다른 날 또 다른 새벽 더 이상 나쁜 꿈을 꾸지 않는 밤이 오려나 위태로운 매일 어딘가에 그대 있다면 구해주오 나를 안아주오 나를")
+    answer=str(input())
+    if(answer=="야화"):
+        print("이걸 맞추네;;")
+    else:
+        print("그걸 틀리네 ㅋㅋ")
+
+def question77():
+    print("이제 나의 이제 나의 어둠은 내가 밝힐 거야 네가 나를 비춰주길 바라지 않을 거야 잃어버렸던 내 모습을 다시 되찾기로 하네 스스로 번지며 차오를게 다시 이제 나의 어둠은 내가 밝힐 거야")
+    answer=str(input())
+    if(answer=="월령"):
+        print("이걸 맞추네;;")
+    else:
+        print("그걸 틀리네 ㅋㅋ")
+
+def question78():
+    print("닻을 올려 어기야디여차 나가자 불안으로 뒤덮인 땅은 뒤로하고 소리 높여 어기야디여차 노래해 찾아가 또 다른 우리를 기다릴 그곳에")
+    answer=str(input())
+    if(answer=="출항"):
+        print("이걸 맞추네;;")
+    else:
+        print("그걸 틀리네 ㅋㅋ")
+
+def question79():
+    print("젊은 우리 나이테는 잘 보이지 않고 찬란한 빛에 눈이 멀어 꺼져가는데")
+    answer=str(input())
+    if(answer=="Tomboy"):
+        print("이걸 맞추네;;")
+    else:
+        print("그걸 틀리네 ㅋㅋ")
+
+def question80():
+    print("그대여 정말 바쁜 하루였죠 정신없이 이리저리 치이기만 했던 하루였죠 그대의 그런마음 이해해요 꿈꾸던 세상과 많이 다른 현실에 많이 실망하고 점점 지쳐가지만")
+    answer=str(input())
+    if(answer=="응원가"):
+        print("이걸 맞추네;;")
+    else:
+        print("그걸 틀리네 ㅋㅋ")
+
+def question81():
+    print("아홉 번 매 마음 다쳐도 한번 웃는 게 좋아 그대 곁이면 행복한 나라서 싫은 표정 한번 조차도 편히 지은 적 없죠 그대 말이면 뭐든 다 할 듯 했었죠")
+    answer=str(input())
+    if(answer=="기다리다"):
+        print("이걸 맞추네;;")
+    else:
+        print("그걸 틀리네 ㅋㅋ")
+
+def question82():
+    print("그대와 날 알잖아요 그리 쉽게 이별을 말하지마 우리 아직 많이 사랑 하잖아요 함께 있어도 그리웠던 보고싶어 하루도 견딜 수 없던 그대와 날 알잖아요 그리 쉽게 이별을 말하지마요")
+    answer=str(input())
+    if(answer=="그리 쉽게 이별을 말하지 말아요"):
+        print("이걸 맞추네;;")
+    else:
+        print("그걸 틀리네 ㅋㅋ")
+
+def question83():
+    print("너희들의 얼굴 들은 왜 내가 불행하다고만 해 나도 다른 사람들처럼 웃고 싶은데 그게 잘 안돼 너는 그냥 지나가 아니 그냥 스쳐가 우리 어떤 사이였는지는 잘 모르겠지만")
+    answer=str(input())
+    if(answer=="Can i love?"):
+        print("이걸 맞추네;;")
+    else:
+        print("그걸 틀리네 ㅋㅋ")
+
+def question84():
+    print("이젠 멈춰버린 너와 나의 시계추는 바람이 불어도 흔들리지 않아 다시 돌아오란 나의 말이 닿지 않을 너무나 멀어진 그리운 사람")
+    answer=str(input())
+    if(answer=="시계추"):
+        print("이걸 맞추네;;")
+    else:
+        print("그걸 틀리네 ㅋㅋ")
+
+def question85():
+    print("나를 그리워한다고 예전처럼 답장해줘 바보같이 보고 싶어서 니 이름을 또 불러 글픔으로 꽉 찬 방에서 나 모르는 새에 울어 훌쩍이며 노래 불렀어 추적추적 빗소리 맞춰")
+    answer=str(input())
+    if(answer=="Rain fallin"):
+        print("이걸 맞추네;;")
+    else:
+        print("그걸 틀리네 ㅋㅋ")
+
+def question86():
+    print("벚꽃이 피는데 우리가 남아서 혼자 도망쳤어 아직 네가 밟혀서 I look around and see 벚꽃 blooming")
+    answer=str(input())
+    if(answer=="봄꽃"):
+        print("이걸 맞추네;;")
+    else:
+        print("그걸 틀리네 ㅋㅋ")
+
+def question87():
+    print("점점 커질 것 같은 내 맘을 날 편하게만 대하는 널 바라보면 애써 누르고 짓 눌러가며 내 맘을 숨겨본다 친구에서 다시 친구로 널 생각하면 나는 미칠 것 같아")
+    answer=str(input())
+    if(answer=="친구에서 친구로"):
+        print("이걸 맞추네;;")
+    else:
+        print("그걸 틀리네 ㅋㅋ")
+
+def question88():
+    print("나 어쩌면 아나 사실 난 말야 널 좋아하나 봐 나 어떻게 할까 이렇게 말하면 더 어색해질까 장난 섞인 너의 메시지에 나 다음 말 고르는 게 쉽지 않아 쓰고 지운 말 널 좋아했나 봐")
+    answer=str(input())
+    if(answer=="친구, 그 오랜시간"):
+        print("이걸 맞추네;;")
+    else:
+        print("그걸 틀리네 ㅋㅋ")
+
+def question89():
+    print("영화 같은 첫 만남과 기적 같은 첫 입맞춤 꿈을 꾼 것 같은 수 천 번의 사랑해 그게 추억이 되는게 어떻게 말이 되니 첫사랑은 다 거짓말")
+    answer=str(input())
+    if(answer=="첫사랑은 거짓말이다"):
+        print("이걸 맞추네;;")
+    else:
+        print("그걸 틀리네 ㅋㅋ")
+
+def question90():
+    print("고개를 들어봐 저 하늘에 뜬 달은 너만을 달빛 길 주변에서 혹시나 내가 일렁이면 너의 행성앞에 은하수로 와줘 너에게 주고싶은 별이 가득 차있어")
+    answer=str(input())
+    if(answer=="저 하늘에 뜬 달은 너만을"):
+        print("이걸 맞추네;;")
+    else:
+        print("그걸 틀리네 ㅋㅋ")
+
+
+
 print("영어는 첫글자만 대문자로 해줘(띄어쓰기는 멜론 제목 기준!)")
 question1()
 question2()
@@ -369,3 +531,23 @@ question67()
 question68()
 question69()
 question70()
+question71()
+question72()
+question73()
+question74()
+question75()
+question76()
+question77()
+question78()
+question79()
+question80()
+question81()
+question82()
+question83()
+question84()
+question85()
+question86()
+question87()
+question88()
+question89()
+question90()
