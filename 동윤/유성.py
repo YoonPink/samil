@@ -188,7 +188,7 @@ for i in range(len(star)):
     recStar[i].y = -1
 
 #5. 미사일 생성
-missile = [pygame.image.load('missile.png') for i in range(40)]
+missile = [pygame.image.load('player.png') for i in range(40)]
 recMissile = [None for i in range(len(missile))]
 for i in range(len(missile)):
     missile[i] = pygame.transform.scale(missile[i], (20, 20))
