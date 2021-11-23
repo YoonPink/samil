@@ -2,8 +2,6 @@ import pygame
 from pygame.rect import *
 import random
 
-###################################################################
-###################################################################
 def restart():
     global isGameOver, score
     isGameOver = False
@@ -12,8 +10,7 @@ def restart():
         recStar[i].y = -1
     for i in range(len(missile)):
         recMissile[i].y = -1
-###################################################################
-###################################################################
+
 def eventProcess():
     for event in pygame.event.get():
         if event.type == pygame.KEYDOWN:
@@ -32,8 +29,7 @@ def eventProcess():
                 restart()
             if event.key == pygame.K_SPACE:
                 makeMissile()
-###################################################################
-###################################################################
+
 def movePlayer():
     if not isGameOver:
         recPlayer.x += move.x
@@ -47,8 +43,7 @@ def movePlayer():
     if recPlayer.y > SCREEN_HEIGHT-recPlayer.height:
         recPlayer.y = SCREEN_HEIGHT-recPlayer.height        
     SCREEN.blit(player, recPlayer)
-###################################################################
-###################################################################
+
 def timeDelay500ms():
     global time_delay_500ms
     if time_delay_500ms > 5:
@@ -76,8 +71,7 @@ def moveStar():
         if recStar[i].y > SCREEN_HEIGHT:
             recStar[i].y = 0
         SCREEN.blit(star[i], recStar[i])
-###################################################################
-###################################################################
+
 def CheckCollisionMissile():
     global score, isGameOver
     if isGameOver:
@@ -117,8 +111,7 @@ def moveMissile():
         if recMissile[i].y < 0:
             recMissile[i].y = -1
         SCREEN.blit(missile[i], recMissile[i])
-###################################################################
-###################################################################
+
 def CheckCollision():   
     global score, isGameOver
     if isGameOver:
@@ -133,9 +126,8 @@ def CheckCollision():
             print('충돌')
             isGameOver = True
             break
-    #score += 1
-###################################################################
-###################################################################
+    score += 1
+
 def blinking():
     global time_dealy_4sec, toggle
     time_dealy_4sec += 1
@@ -154,9 +146,7 @@ def setText():
             'Game Over!!', True, 'red'), (150, 300, 0, 0))
         SCREEN.blit(mFont.render(
             'press R - Restart', True, 'red'), (140, 320, 0, 0))
-###################################################################
-###################################################################
-#1.변수초기화
+
 isActive = True
 SCREEN_WIDTH = 400
 SCREEN_HEIGHT = 600
@@ -167,19 +157,16 @@ toggle = False
 score = 0
 isGameOver = False
 
-#2.스크린생성
 pygame.init()
 SCREEN = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-pygame.display.set_caption('CodingNoew!!')
+pygame.display.set_caption('행성파괴자!!')
 
-#3. player 생성
 player = pygame.image.load('player.png')
 player = pygame.transform.scale(player,(20,30))
 recPlayer = player.get_rect()
 recPlayer.centerx = (SCREEN_WIDTH/2)
 recPlayer.centery = (SCREEN_HEIGHT/2)
 
-#4. 유성 생성
 star = [pygame.image.load('star.png') for i in range(40)]
 recStar = [None for i in range(len(star))]
 for i in range(len(star)):
@@ -187,7 +174,6 @@ for i in range(len(star)):
     recStar[i] = star[i].get_rect()
     recStar[i].y = -1
 
-#5. 미사일 생성
 missile = [pygame.image.load('player.png') for i in range(40)]
 recMissile = [None for i in range(len(missile))]
 for i in range(len(missile)):
@@ -195,27 +181,16 @@ for i in range(len(missile)):
     recMissile[i] = missile[i].get_rect()
     recMissile[i].y = -1
 
-#5. 기타
 clock = pygame.time.Clock()
 
-#####반복####
 while isActive:
-    #1.화면 지움
     SCREEN.fill((0,0,0))
-    #2.이벤트처리
     eventProcess()
-    #3.플레이어 이동
     movePlayer()
-    #4.유성 생성 및 이동
     moveStar()
-    #4.미사일 생성 및 이동
     moveMissile()
-    #5.충돌 확인
     CheckCollisionMissile()
     CheckCollision()
-    #6.text업데이트
-    setText()
-    #7.화면 갱신
+    setText() 
     pygame.display.flip()
     clock.tick(100)
-#####반복####
