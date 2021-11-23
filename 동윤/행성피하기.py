@@ -105,7 +105,7 @@ def setText(isupdate=False):
             f'Game Over!!', True, 'red'), (150, 300, 0, 0))
         SCREEN.blit(myFont.render(
             f'press R - Restart', True, 'red'), (140, 320, 0, 0))
-
+#변수
 SCREEN_WIDTH = 400
 SCREEN_HEIGHT = 600
 score = 0
@@ -115,7 +115,7 @@ move = Rect(0, 0, 0, 0)
 time500ms = 0
 time4Sec = 0
 time4SecToggle = False
-
+#스크린
 pygame.init()
 SCREEN = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("행성피하기!!")
@@ -136,12 +136,12 @@ for i in range(len(star)):
 clock = pygame.time.Clock()
 
 while isActive:
-    SCREEN.fill((0, 0, 0))
+    SCREEN.fill((0, 0, 0))     #검정으로 지우기
     eventProcess(move)    
     movePlayer(player, rectPlayer,move,isGameOver) 
     makeStar(rectStar)
     moveStar(star, rectStar,isGameOver)
-    CheckCollision(rectPlayer, rectStar)
+    CheckCollision(rectPlayer, rectStar)    #충돌
     setText(timeUpdate4sec(isGameOver))      
-    pygame.display.flip()
+    pygame.display.flip()   #화면 업뎃
     clock.tick(100)    
