@@ -551,9 +551,9 @@ def question98():
         print("그걸 틀리네 ㅋㅋ")
 
 def question99():
-    print("네가 다른 사람이 좋아지면 내가 너 없는 게 익숙해지면 그떄가 오면 그떄가 되면 그떄 헤어지면 돼")
+    print("네가 다른 사람이 좋아지면 내가 너 없는 게 익숙해지면 그떄가 오면 그떄가 되면 그 헤어지면 돼")
     answer=str(input())
-    if(answer=="그떄 헤어지면 돼"):
+    if(answer=="그때 헤어지면 돼"):
         print("이걸 맞추네;;")
     else:
         print("그걸 틀리네 ㅋㅋ")
