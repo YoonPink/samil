@@ -745,7 +745,7 @@ def question42():
 def question43():
     print("그대가 손끝에 닿을 듯해 내게서 머무는 듯 해 부를 것 같아 다시 잠들고 싶어 너의 온기 속에서 너의 품에서 ")
     answer=str(input())
-    if(answer=="물고기 자리"):
+    if(answer=="물고기자리"):
         print("이걸 맞추네;;")
     else:
         print("그걸 틀리네 ㅋㅋ")
@@ -798,7 +798,7 @@ def question49():
     else:
         print("그걸 틀리네 ㅋㅋ")
 
-def question50():
+def question0():
     print("어제와 오늘의 온도가 너무 달라서 비행운이 만들어졌네 내가 머물기에 여기는 너무 높아서 한숨자국만 깊게 드러났네")
     answer=str(input())
     if(answer=="비행운"):
@@ -815,6 +815,7 @@ def question101():
         print("이건 틀려야지")
 
 print("영어는 첫글자만 대문자로 해줘(띄어쓰기는 멜론 제목 기준!)")
+question0()
 question1()
 question2()
 question3()
