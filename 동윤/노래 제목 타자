@@ -1,0 +1,25 @@
+import random
+import time
+
+w=["니가 좋아했으면 해", "너로 짙은 밤", "오늘은 다를거야", "Paris", "몇번째", "네가 그린 그런 그림", "시간이 달라서", "어제 너는 나를 버렸어", "촛농의 노래", "질투가 나", "Bye bye my blue", "사랑인 듯 아닌 듯", "빌런", "달콤한 빈말", "헤어지던 밤", "난 사랑을 하고싶어 근데 난 사랑을 하기싫어", "Obliviate", "기억을 걷는 시간", "너를 사랑한다는 말이 발음 안돼", "Mood Indigo", "밤새 니가 내려"]
+n=1
+print("[타자 게임] 준비되면 Enter")
+input()
+start = time.time()
+
+q=random.choice(w)
+while n <=10:
+    print("--문제", n, "--")
+    print(q)
+    x=input()
+    if q == x:
+        print("성공")
+        n=n+1
+        q=random.choice(w)
+    else:
+        print("그걸 틀리네 ㅋㅋ")
+
+end = time.time()
+et = end - start
+et = format(et, ".2f")
+print("타자 시간: ",et,"초")
