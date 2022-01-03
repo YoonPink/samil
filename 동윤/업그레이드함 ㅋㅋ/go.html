@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>새 탭</title>
+    <style>
+        #navbar{
+            padding: 0 20px;
+            overflow: hidden;
+            height: 60px;
+        }
+
+        #menu {
+            list-style: none;
+            float: right;
+            margin: 0;
+            padding: 0;
+        }
+
+        #menu li{
+            float: left;
+        }
+
+        #menu li a{
+            padding-left: 10px;
+            padding-right: 10px;
+            text-decoration: none;
+            line-height: 60px;
+            display: block;
+            color: #AEADAD;
+        }
+
+        #menu li a:hover{
+            text-decoration: underline;
+        }
+
+        #logo{
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        #search_main{
+            text-align: center;
+        }
+
+        #search{
+            width: 550px;
+            height: 45px;
+            border-radius: 40px;
+            border: 1px solid #ECE9E9;
+            margin-top: 35px;
+            padding-left: 50px;
+            background-image: url(돋보기2.png);
+            background-repeat: no-repeat;
+            background-position: 5px left;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        #img1{
+            margin-top: 13px;
+        }
+
+        #img1:hover{
+            background-color: #E3E0E0;
+            border-radius: 100px;
+            transition: 1.0s;
+        }
+
+        .button {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .searchBtn, .FeelingLucky {
+            margin: 0 5px;
+            margin-top: 20px;
+            padding: 8px 12px;
+            border: none;
+            background-color: rgb(245,246,247);
+            border-radius: 5px;
+            color: #555;
+            cursor: pointer;
+            height: 35px;
+        }
+
+        .searchBtn:hover, .FeelingLucky:hover{
+            border: 1px solid lightgray;
+            color: #222;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <ul id="menu">
+            <li><a href="https://mail.google.com/mail/u/0/?tab=wm#inbox">Gmail</a></li>
+            <li><a href="https://www.google.co.kr/imghp?hl=ko&tab=ri&ogbl">이미지</a></li>
+            <li><a href="#"><img id="img1" src="메뉴아이콘.png" width="30px" height="30px"></a></li>
+        </ul>
+    </div>
+
+    <form method = "get" action="http://www.google.co.kr/search">
+        <div id="logo">
+            <img src="google_logo.png" width="350px">
+        </div>
+        <div id="search_main">
+            <input type="text" name="q" size="25" maxlength="255" value="" id="search" placeholder="  Google 검색 또는 URL 입력">
+        </div>
+        <div class="button">
+            <button class="searchBtn">Google 검색</button>
+            <button class="FeelingLucky">I'm Feeling Lucky</button>
+        </div>
+    </form>
+</body>
+</html>
